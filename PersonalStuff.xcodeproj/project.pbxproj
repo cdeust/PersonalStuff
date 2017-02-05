@@ -28,6 +28,11 @@
 		B1673D9B1E462C8E004600AB /* Videos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1673D9A1E462C8E004600AB /* Videos.storyboard */; };
 		B1673D9D1E462C99004600AB /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1673D9C1E462C99004600AB /* Messages.storyboard */; };
 		B1673D9F1E462E0F004600AB /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D9E1E462E0F004600AB /* RegisterVC.swift */; };
+		B1A5BF401E4766A3006D6F13 /* Note+NoteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5BF3F1E4766A3006D6F13 /* Note+NoteDelegate.swift */; };
+		B1A5BF421E4766BA006D6F13 /* NotesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5BF411E4766BA006D6F13 /* NotesVM.swift */; };
+		B1A5BF441E476B2D006D6F13 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5BF431E476B2D006D6F13 /* Notes.swift */; };
+		B1A5BF461E476BF3006D6F13 /* Notes+properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5BF451E476BF3006D6F13 /* Notes+properties.swift */; };
+		B1A5BF491E4772BE006D6F13 /* String+Uid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5BF481E4772BE006D6F13 /* String+Uid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +80,11 @@
 		B1673D9A1E462C8E004600AB /* Videos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Videos.storyboard; path = Views/Videos.storyboard; sourceTree = "<group>"; };
 		B1673D9C1E462C99004600AB /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Messages.storyboard; path = Views/Messages.storyboard; sourceTree = "<group>"; };
 		B1673D9E1E462E0F004600AB /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterVC.swift; path = Controllers/RegisterVC.swift; sourceTree = "<group>"; };
+		B1A5BF3F1E4766A3006D6F13 /* Note+NoteDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Note+NoteDelegate.swift"; path = "Controllers/Extensions/Note/Note+NoteDelegate.swift"; sourceTree = "<group>"; };
+		B1A5BF411E4766BA006D6F13 /* NotesVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotesVM.swift; path = Models/NotesVM.swift; sourceTree = "<group>"; };
+		B1A5BF431E476B2D006D6F13 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notes.swift; path = CoreData/Notes.swift; sourceTree = "<group>"; };
+		B1A5BF451E476BF3006D6F13 /* Notes+properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Notes+properties.swift"; path = "CoreData/Notes+properties.swift"; sourceTree = "<group>"; };
+		B1A5BF481E4772BE006D6F13 /* String+Uid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Uid.swift"; path = "Utils/String+Uid.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,7 @@
 		B1673D4A1E461E58004600AB /* PersonalStuff */ = {
 			isa = PBXGroup;
 			children = (
+				B1A5BF471E477297006D6F13 /* Utils */,
 				B1673D811E461F1E004600AB /* Views */,
 				B1673D801E461F18004600AB /* Models */,
 				B1673D7F1E461F11004600AB /* Controllers */,
@@ -160,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				B1673D7C1E461E98004600AB /* CoreDataStack.swift */,
+				B1A5BF431E476B2D006D6F13 /* Notes.swift */,
+				B1A5BF451E476BF3006D6F13 /* Notes+properties.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -181,6 +194,7 @@
 		B1673D801E461F18004600AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B1A5BF411E4766BA006D6F13 /* NotesVM.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -201,6 +215,7 @@
 		B1673D881E4624BE004600AB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B1A5BF3E1E476672006D6F13 /* Note */,
 				B1673D891E4624C4004600AB /* Folder */,
 			);
 			name = Extensions;
@@ -213,6 +228,22 @@
 				B1673D8C1E462711004600AB /* Folder+TableViewDataSource.swift */,
 			);
 			name = Folder;
+			sourceTree = "<group>";
+		};
+		B1A5BF3E1E476672006D6F13 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				B1A5BF3F1E4766A3006D6F13 /* Note+NoteDelegate.swift */,
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
+		B1A5BF471E477297006D6F13 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B1A5BF481E4772BE006D6F13 /* String+Uid.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,17 +388,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A5BF401E4766A3006D6F13 /* Note+NoteDelegate.swift in Sources */,
+				B1A5BF441E476B2D006D6F13 /* Notes.swift in Sources */,
 				B1673D911E462BA4004600AB /* ImagesVC.swift in Sources */,
 				B1673D951E462C2B004600AB /* MessagesVC.swift in Sources */,
 				B1673D541E461E59004600AB /* PersonalStuff.xcdatamodeld in Sources */,
 				B1673D871E4623FC004600AB /* FolderVC.swift in Sources */,
 				B1673D9F1E462E0F004600AB /* RegisterVC.swift in Sources */,
 				B1673D931E462BE0004600AB /* VideosVC.swift in Sources */,
+				B1A5BF421E4766BA006D6F13 /* NotesVM.swift in Sources */,
 				B1673D8F1E462B64004600AB /* NotesVC.swift in Sources */,
 				B1673D4C1E461E59004600AB /* AppDelegate.swift in Sources */,
 				B1673D8B1E4624EB004600AB /* Folder+TableViewDelegate.swift in Sources */,
 				B1673D8D1E462711004600AB /* Folder+TableViewDataSource.swift in Sources */,
+				B1A5BF461E476BF3006D6F13 /* Notes+properties.swift in Sources */,
 				B1673D7D1E461E98004600AB /* CoreDataStack.swift in Sources */,
+				B1A5BF491E4772BE006D6F13 /* String+Uid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +646,7 @@
 				B1673D751E461E59004600AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1673D761E461E59004600AB /* Build configuration list for PBXNativeTarget "PersonalStuffTests" */ = {
 			isa = XCConfigurationList;
@@ -618,6 +655,7 @@
 				B1673D781E461E59004600AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1673D791E461E59004600AB /* Build configuration list for PBXNativeTarget "PersonalStuffUITests" */ = {
 			isa = XCConfigurationList;
@@ -626,6 +664,7 @@
 				B1673D7B1E461E59004600AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

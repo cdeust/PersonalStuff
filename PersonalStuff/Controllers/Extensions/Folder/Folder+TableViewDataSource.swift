@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 extension FolderVC: UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = "defaultCell"
         
@@ -19,7 +18,6 @@ extension FolderVC: UITableViewDataSource {
         if cell == nil {
             cell = UITableViewCell(style: .default, reuseIdentifier: identifier)
         }
-        
         cell?.textLabel?.text = self.numberOfFolder[indexPath.row]
         
         return cell!

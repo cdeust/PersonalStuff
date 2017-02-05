@@ -14,7 +14,6 @@ class ImagesVC: UIViewController {
 }
 
 extension ImagesVC {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

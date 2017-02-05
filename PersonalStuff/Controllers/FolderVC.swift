@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class FolderVC: UIViewController {
-    
     @IBOutlet weak var back: UINavigationItem!
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,7 +17,6 @@ class FolderVC: UIViewController {
 }
 
 extension FolderVC {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +36,6 @@ extension FolderVC {
 }
 
 extension FolderVC {
-    
     @IBAction func backPressed() {
         guard let navigationController = self.navigationController else { return }
         

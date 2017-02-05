@@ -14,7 +14,6 @@ class MessagesVC: UIViewController {
 }
 
 extension MessagesVC {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

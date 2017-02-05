@@ -9,7 +9,6 @@
 import UIKit
 
 class RegisterVC: UIViewController {
-    
     @IBOutlet weak var surnameLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var surnameTextField: UITextField!
@@ -17,7 +16,6 @@ class RegisterVC: UIViewController {
 }
 
 extension RegisterVC {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,9 +28,7 @@ extension RegisterVC {
 }
 
 extension RegisterVC {
-    
     @IBAction func createPressed() {
-        
         guard let navigationController = self.navigationController else { return }
         
         let storyboard = UIStoryboard(name: "Folder", bundle: nil)

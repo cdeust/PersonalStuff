@@ -10,9 +10,7 @@ import Foundation
 import UIKit
 
 extension FolderVC: UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         guard let navigationController = self.navigationController else { return }
         
         switch indexPath.row {
