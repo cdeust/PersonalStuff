@@ -15,14 +15,41 @@ protocol NoteDelegate {
 }
 
 class NotesVM: NSObject {
-    var noteTitle: String
-    var noteText: String
-    var delegate: NoteDelegate
+    private var _noteTitle: String
+    private var _noteText: String
+    private var _delegate: NoteDelegate
+    
+    var noteTitle: String {
+        get {
+            return _noteTitle;
+        }
+        set {
+            _noteTitle = newValue
+        }
+    }
+    
+    var noteText: String {
+        get {
+            return _noteText
+        }
+        set {
+            _noteText = newValue
+        }
+    }
+    
+    var delegate: NoteDelegate {
+        get {
+            return _delegate
+        }
+        set {
+            _delegate = newValue
+        }
+    }
     
     init(title: String, text: String, delegate: NoteDelegate) {
-        self.noteTitle = title
-        self.noteText = text
-        self.delegate = delegate
+        self._noteTitle = title
+        self._noteText = text
+        self._delegate = delegate
     }
 }
 
