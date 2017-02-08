@@ -11,7 +11,7 @@ import UIKit
 
 
 extension UIFont {
-    public class func helveticaNeueRegular(size: CGFloat) {
+    public class func helveticaNeueRegular(size: CGFloat) -> UIFont {
         return UIFont(name: "HelveticaNeue", size: size)!
     }
     
