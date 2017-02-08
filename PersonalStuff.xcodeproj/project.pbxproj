@@ -36,8 +36,9 @@
 		B1E8A8B11E4A974700115B52 /* UIFont+HelveticaNeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8A8B01E4A974600115B52 /* UIFont+HelveticaNeue.swift */; };
 		B1E8A8B31E4BC27B00115B52 /* KeyboardEvading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8A8B21E4BC27B00115B52 /* KeyboardEvading.swift */; };
 		B1E8A8B51E4BC64300115B52 /* KeyboardDismissing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8A8B41E4BC64300115B52 /* KeyboardDismissing.swift */; };
-		B1E8A8B71E4BD04B00115B52 /* UIDevice+PhoneConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8A8B61E4BD04B00115B52 /* UIDevice+PhoneConfiguration.swift */; };
 		B1E8A8B91E4BD41B00115B52 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8A8B81E4BD41B00115B52 /* Reachability.swift */; };
+		B1E8A8BF1E4BE53300115B52 /* UIDevice+Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8A8BD1E4BE53300115B52 /* UIDevice+Information.swift */; };
+		B1E8A8C01E4BE53300115B52 /* UIDevice+PhoneConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8A8BE1E4BE53300115B52 /* UIDevice+PhoneConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +94,9 @@
 		B1E8A8B01E4A974600115B52 /* UIFont+HelveticaNeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+HelveticaNeue.swift"; path = "Utils/UIFont+HelveticaNeue.swift"; sourceTree = "<group>"; };
 		B1E8A8B21E4BC27B00115B52 /* KeyboardEvading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardEvading.swift; path = Utils/KeyboardEvading.swift; sourceTree = "<group>"; };
 		B1E8A8B41E4BC64300115B52 /* KeyboardDismissing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardDismissing.swift; path = Utils/KeyboardDismissing.swift; sourceTree = "<group>"; };
-		B1E8A8B61E4BD04B00115B52 /* UIDevice+PhoneConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+PhoneConfiguration.swift"; path = "Utils/UIDevice+PhoneConfiguration.swift"; sourceTree = "<group>"; };
 		B1E8A8B81E4BD41B00115B52 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Utils/Reachability.swift; sourceTree = "<group>"; };
+		B1E8A8BD1E4BE53300115B52 /* UIDevice+Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+Information.swift"; path = "Utils/Struct/UIDevice+Information.swift"; sourceTree = "<group>"; };
+		B1E8A8BE1E4BE53300115B52 /* UIDevice+PhoneConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+PhoneConfiguration.swift"; path = "Utils/Struct/UIDevice+PhoneConfiguration.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,14 +253,23 @@
 		B1A5BF471E477297006D6F13 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B1E8A8BC1E4BE4AB00115B52 /* Struct */,
 				B1A5BF481E4772BE006D6F13 /* String+Uid.swift */,
 				B1E8A8B01E4A974600115B52 /* UIFont+HelveticaNeue.swift */,
 				B1E8A8B21E4BC27B00115B52 /* KeyboardEvading.swift */,
 				B1E8A8B41E4BC64300115B52 /* KeyboardDismissing.swift */,
 				B1E8A8B81E4BD41B00115B52 /* Reachability.swift */,
-				B1E8A8B61E4BD04B00115B52 /* UIDevice+PhoneConfiguration.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		B1E8A8BC1E4BE4AB00115B52 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				B1E8A8BD1E4BE53300115B52 /* UIDevice+Information.swift */,
+				B1E8A8BE1E4BE53300115B52 /* UIDevice+PhoneConfiguration.swift */,
+			);
+			name = Struct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,14 +425,15 @@
 				B1E8A8B51E4BC64300115B52 /* KeyboardDismissing.swift in Sources */,
 				B1673D931E462BE0004600AB /* VideosVC.swift in Sources */,
 				B1A5BF421E4766BA006D6F13 /* NotesVM.swift in Sources */,
+				B1E8A8C01E4BE53300115B52 /* UIDevice+PhoneConfiguration.swift in Sources */,
 				B1673D8F1E462B64004600AB /* NotesVC.swift in Sources */,
 				B1673D4C1E461E59004600AB /* AppDelegate.swift in Sources */,
 				B1673D8B1E4624EB004600AB /* Folder+TableViewDelegate.swift in Sources */,
 				B1E8A8B91E4BD41B00115B52 /* Reachability.swift in Sources */,
 				B1E8A8B31E4BC27B00115B52 /* KeyboardEvading.swift in Sources */,
 				B1673D8D1E462711004600AB /* Folder+TableViewDataSource.swift in Sources */,
+				B1E8A8BF1E4BE53300115B52 /* UIDevice+Information.swift in Sources */,
 				B1A5BF461E476BF3006D6F13 /* Notes+properties.swift in Sources */,
-				B1E8A8B71E4BD04B00115B52 /* UIDevice+PhoneConfiguration.swift in Sources */,
 				B1673D7D1E461E98004600AB /* CoreDataStack.swift in Sources */,
 				B1A5BF491E4772BE006D6F13 /* String+Uid.swift in Sources */,
 			);

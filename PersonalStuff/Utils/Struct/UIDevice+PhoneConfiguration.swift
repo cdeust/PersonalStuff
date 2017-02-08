@@ -241,6 +241,10 @@ public struct Device {
             
             public struct Device {
                 
+                public static var current: CurrentDevice {
+                    return CurrentDevice.deviceInformation()
+                }
+                
                 public static var identifierForVendor: String? {
                     return UIDevice.current.identifierForVendor?.uuidString
                 }
