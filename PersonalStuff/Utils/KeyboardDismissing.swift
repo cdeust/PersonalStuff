@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@objc public class KeyboardDismissing: UIView {
+public class KeyboardDismissing: UIView {
     
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)

@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-@objc public enum KeyboardEvadingMode: Int {
+public enum KeyboardEvadingMode: Int {
     case maximum
     case minimum
     case minimumDelayed
 }
 
-@objc public class KeyboardEvading: NSObject {
+public class KeyboardEvading: NSObject {
     
     private static var minimumAnimationDuration: CGFloat = 0.0
     private static var lastNotification: Foundation.Notification!
@@ -229,7 +229,7 @@ import UIKit
     private class func setEvadingView(_ evadingView: UIView?, withOptionalTriggerView triggerView: UIView?) {
         self.initialise()
         
-        self._evadingView = avoidingView
+        self._evadingView = evadingView
         self.evadingViewUsesAutoLayout = (evadingView != nil && evadingView!.superview != nil) ? evadingView!.superview!.constraints.count > 0 : false
         
         self.triggerViews.removeAll()
@@ -237,9 +237,9 @@ import UIKit
             self.triggerViews.append(triggerView!)
         }
         
-        self.paddingForCurrentAvoidingView = self.padding
+        self.paddingForCurrentEvadingView = self.padding
         self.evadingBlock = nil
-        if self.isKeyboardVisible && avoidingView != nil {
+        if self.isKeyboardVisible && evadingView != nil {
             self.didChange(self.lastNotification)
         }
         self.deinitialise()
@@ -263,8 +263,8 @@ import UIKit
     
     private class func initialise() {
         if self.evadingBlock == nil && self.evadingView == nil {
-            NotificationCenter.default.addObserver(self, selector: #selector(KeyboardAvoiding.applicationDidEnterBackground(_:)), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
-            NotificationCenter.default.addObserver(self, selector: #selector(KeyboardAvoiding.didChange(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(KeyboardEvading.applicationDidEnterBackground(_:)), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(KeyboardEvading.didChange(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
         }
     }
     private class func deinitialise() {
