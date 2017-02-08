@@ -33,6 +33,7 @@
 		B1A5BF441E476B2D006D6F13 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5BF431E476B2D006D6F13 /* Notes.swift */; };
 		B1A5BF461E476BF3006D6F13 /* Notes+properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5BF451E476BF3006D6F13 /* Notes+properties.swift */; };
 		B1A5BF491E4772BE006D6F13 /* String+Uid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5BF481E4772BE006D6F13 /* String+Uid.swift */; };
+		B1E8A8B11E4A974700115B52 /* UIFont+HelveticaNeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8A8B01E4A974600115B52 /* UIFont+HelveticaNeue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		B1A5BF431E476B2D006D6F13 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notes.swift; path = CoreData/Notes.swift; sourceTree = "<group>"; };
 		B1A5BF451E476BF3006D6F13 /* Notes+properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Notes+properties.swift"; path = "CoreData/Notes+properties.swift"; sourceTree = "<group>"; };
 		B1A5BF481E4772BE006D6F13 /* String+Uid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Uid.swift"; path = "Utils/String+Uid.swift"; sourceTree = "<group>"; };
+		B1E8A8B01E4A974600115B52 /* UIFont+HelveticaNeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+HelveticaNeue.swift"; path = "Utils/UIFont+HelveticaNeue.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				B1A5BF481E4772BE006D6F13 /* String+Uid.swift */,
+				B1E8A8B01E4A974600115B52 /* UIFont+HelveticaNeue.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				B1A5BF401E4766A3006D6F13 /* Note+NoteDelegate.swift in Sources */,
 				B1A5BF441E476B2D006D6F13 /* Notes.swift in Sources */,
 				B1673D911E462BA4004600AB /* ImagesVC.swift in Sources */,
+				B1E8A8B11E4A974700115B52 /* UIFont+HelveticaNeue.swift in Sources */,
 				B1673D951E462C2B004600AB /* MessagesVC.swift in Sources */,
 				B1673D541E461E59004600AB /* PersonalStuff.xcdatamodeld in Sources */,
 				B1673D871E4623FC004600AB /* FolderVC.swift in Sources */,
