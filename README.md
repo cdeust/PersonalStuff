@@ -1,4 +1,26 @@
-# PersonalStuff
+# Product Name
+> A personal note project. The project is still ongoing.
 
-####Master branch build status: 
-![](https://travis-ci.org/cdeust/PersonalStuff.svg?branch=master)
+[![Swift Version][swift-image]][swift-url]
+[![Build Status][travis-image]][travis-url]
+[![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
+
+![](header.png)
+
+## Requirements
+
+- iOS 9.0+
+- Xcode 8.2
+
+## Meta
+
+Clement DEUST – [@cdeust](https://twitter.com/cdeust)
+
+[https://github.com/cdeust/github-link](https://github.com/cdeust/)
+
+[swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
+[swift-url]: https://swift.org/
+[travis-image]: https://img.shields.io/travis/cdeust/PersonalStuff/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/cdeust/PersonalStuff
+[codebeat-image]: https://codebeat.co/badges/c19b47ea-2f9d-45df-8458-b2d952fe9dad
+[codebeat-url]: https://codebeat.co/projects/github-com-vsouza-awesomeios-com
