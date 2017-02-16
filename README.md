@@ -1,4 +1,4 @@
-# Product Name
+# PersonalStuff
 > A personal note project. The project is still ongoing.
 
 [![Swift Version][swift-image]][swift-url]
