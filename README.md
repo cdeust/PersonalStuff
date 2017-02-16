@@ -5,8 +5,6 @@
 [![Build Status][travis-image]][travis-url]
 [![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 
-![](header.png)
-
 ## Requirements
 
 - iOS 9.0+
@@ -15,8 +13,6 @@
 ## Meta
 
 Clement DEUST – [@cdeust](https://twitter.com/cdeust)
-
-[https://github.com/cdeust/github-link](https://github.com/cdeust/)
 
 [swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
 [swift-url]: https://swift.org/
