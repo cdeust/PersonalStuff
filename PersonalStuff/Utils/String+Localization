@@ -1,0 +1,17 @@
+//
+//  String+Localization.swift
+//  PersonalStuff
+//
+//  Created by Clément DEUST on 19/09/2017.
+//  Copyright © 2017 cdeust. All rights reserved.
+//
+
+extension String {
+    init(_ string: String, comment: String) {
+        self = NSLocalizedString(string, comment: comment)
+    }
+    
+    init(_ key: String, tableName: String?, bundle: Bundle, value: String, comment: String) {
+        self = NSLocalizedString(key, tableName: tableName, bundle: bundle, value: value, comment: comment)
+    }
+}
